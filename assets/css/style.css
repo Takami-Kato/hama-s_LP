@@ -1,6 +1,134 @@
 .top {
-  background-image: url("../img/top_和柄.png");
+  height:1600px;
+  background-image: url("../img/sanuki.jpg");
+  background-size:100% 100%;
 }
+
+.top-text {
+  position:relative;
+  top:500px;
+  background-color: rgba(0,0,50,0.5);
+  border-radius: 10px;
+  margin-left:5%;
+  width:90%;
+  font-size:60px;
+  text-align: center;
+  color:#ffd700;
+
+
+}
+
 .contents {
-  background-image: url("../img/back_和柄.png");
+  background-image: url("../img/back_和柄.jpg");
+  background-size:100% auto;
+  background-repeat: repeat-y;
+  padding-bottom:1200px;
+}
+
+.row{
+  width:100%;
+  background-color: rgba(0, 0, 50, 0.8);
+  text-align: center;
+  color:#FFF;
+  margin:0 0 1rem 0;
+}
+
+.memory-text{
+  height:50%;
+  font-size:40px;
+  text-align: left;
+}
+
+.month{
+  display: inline-block;
+  margin-top: 20%;
+  font-size:100px;
+  text-align: center;
+}
+
+.memory-img{
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+.memory-img img {
+  width:100%;
+  height:100%;
+  -webkit-transition: all 1s;
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+}
+
+.memory-img img.move {
+  -webkit-transform: translate(50px, 0);
+  opacity: 0;
+}
+
+.memory-img.expansion {
+  width:100%;
+  height:auto;
+  position: fixed;
+  top: 10%;
+  left:0;
+  z-index: 1;
+  padding: 5% 5% 5% 5%;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+}
+
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+.modal__bg{
+  background: rgba(0,0,0,0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content{
+  background-image: url("../img/msgbg.png");
+  background-size: 100% 100%;
+  border-radius: 10px;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  text-align: center;
+  font-size:35px;
+  font-family:monospace;
+}
+
+#modal01 .modal__content p {
+  border-radius: 10px;
+  background: rgba(250,250,250,0.8);
+}
+
+#modal01 .modal__content a {
+  text-align: center;
+  border-radius: 10px;
+}
+
+#modal01 .modal__content a img{
+  width:400px;
+  height:150px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+#modal02 .modal__content a img{
+  width:400px;
+  height:200px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+.dinner {
+  border-radius: 10px;
+}
+
+.instagram{
+  border-radius: 10px;
 }
