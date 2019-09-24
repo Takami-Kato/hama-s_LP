@@ -9,18 +9,14 @@ $(function(){
   $(window).scroll(function() {
     scrollAndFadeIn($(".memory-img"));
 
+    // initExpand();
+
     displayModal();
   });
 
   $('.js-modal-close').on('click',function(){
     $('.js-modal').fadeOut();
     $(window).stop().scrollTop(0);
-    return false;
-  });
-
-  $('#modal01 .modal__content a').on('click',function(){
-    $('.js-modal').fadeOut();
-    $('#modal02').fadeIn();
     return false;
   });
 
@@ -47,17 +43,26 @@ function imgExpanted(selector){
   if(selector.hasClass('expansion')){
     selector.removeClass('expansion');
   } else {
+    initExpand();
     selector.hide();
     selector.addClass('expansion');
     selector.fadeIn('fast');
   }
 }
 
+function initExpand(){
+  $('.memory-img').each(function(){
+    if($(this).hasClass('expansion')){
+      $(this).removeClass('expansion')
+    }
+  });
+}
+
 function displayModal(){
   var scrollPos = $(window).scrollTop();
   var docHeight = $(document).innerHeight();
   var windowHeight = $(window).innerHeight();
-  var bottom = (docHeight - windowHeight)*19/20;
+  var bottom = (docHeight - windowHeight)*24/25;
 
   if(bottom <= scrollPos){
     $('#modal01').fadeIn();
