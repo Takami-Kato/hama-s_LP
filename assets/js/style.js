@@ -9,8 +9,6 @@ $(function(){
   $(window).scroll(function() {
     scrollAndFadeIn($(".memory-img"));
 
-    // initExpand();
-
     displayModal();
   });
 

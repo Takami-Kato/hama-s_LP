@@ -120,12 +120,6 @@
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
-#modal02 .modal__content a img{
-  width:400px;
-  height:200px;
-  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-}
-
 .dinner {
   border-radius: 10px;
 }
